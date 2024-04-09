@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Print Numbers Challenge</title>
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+    <h1>Print Numbers from 1 to 1983</h1>
+    <script>
+      const printNumbers = () => {
+        const start = 1;
+        const end = 1983;
+        const multiple = 40;
+        const stopAt = 1991;
+
+        for (let i = start; i <= end; i++) {
+          if (i === stopAt) break;
+          console.log(i % multiple === 0 ? "My life" : i);
+        }
+      };
+      printNumbers();
+    </script>
+  </body>
+</html>
